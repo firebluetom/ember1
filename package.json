@@ -22,6 +22,7 @@
     "lint:hbs:fix": "ember-template-lint . --fix",
     "lint:js": "eslint . --cache",
     "lint:js:fix": "eslint . --fix",
+    "postinstall": "node scripts/postinstall.js",
     "start": "ember serve",
     "test": "concurrently \"npm:lint\" \"npm:test:*\" --names \"lint,test:\" --prefixColors auto",
     "test:ember": "ember test"
@@ -92,6 +93,7 @@
   },
   "dependencies": {
     "ember-truth-helpers": "^4.0.3",
+    "open": "^8.4.2",
     "rsvp": "^4.8.5"
   }
 }
