@@ -3,19 +3,22 @@
   tabindex="0"
   {{on "click" @onClick}}
   {{on "keydown" this.handleKeyDown}}
+  data-test-table-row
 >
-  <td class="checkbox-cell">
+  {{#each this.rowData as |row|}}
+    <td class="{{if (eq row.status 'status') 'status-cell'}}">{{column}}</td>
+  {{/each}}
+
+  <td class="checkbox-cell" data-test-checkbox-cell>
     <Checkbox @checked={{@isSelected}} @skipTab={{true}} />
   </td>
   <td class="">{{@row.name}}</td>
   <td class="">{{@row.device}}</td>
   <td class="">{{@row.path}}</td>
-  <td class="relative status-cell">
+  <td class="relative status-cell" data-test-table-status-cell>
     {{#if (eqi @row.status "available")}}
       <span class="green-circle"></span>
-      Available
-    {{else}}
-      Scheduled
     {{/if}}
+    {{@row.status}}
   </td>
 </tr>

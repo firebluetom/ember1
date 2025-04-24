@@ -16,7 +16,7 @@ export default class TableControls extends Component {
     }
 
     get showFull() {
-        return this.args.selectedRows.size === this.args.numberOfOptions;
+        return this.args.selectedRows.size !== 0 && this.args.selectedRows.size === this.args.numberOfOptions;
     }
 
     get selectedText() {

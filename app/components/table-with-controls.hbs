@@ -11,9 +11,14 @@
     <tr>
       <th class="checkbox-cell"></th>
       {{!-- use dynamic column names rather than hard coding --}}
-      {{#each this.namedColumns as |column|}}
+      {{!-- {{#each this.namedColumns as |column|}}
         <th class="{{if (eq column 'status') 'status-cell'}}">{{column}}</th>
-      {{/each}}
+      {{/each}} --}}
+      
+      <th class="">Name</th>
+      <th class="">Device</th>
+      <th class="">Path</th>
+      <th class="status-cell">Status</th>
     </tr>
   </thead>
   <tbody>

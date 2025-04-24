@@ -63,6 +63,7 @@ table.file-list .checkbox-cell {
 /* status cell */
 table.file-list .status-cell {
   padding-left: 20px;
+  text-transform: capitalize;
 }
 
 .green-circle {

@@ -16,12 +16,12 @@ export default class Table extends Component {
   constructor(...args) {
     super(...args);
     // validate table has some expected columns
-    if (!this.args?.data?.[0].status) {
+    if (!this.args?.data?.[0]?.status) {
         console.warn(`expected "status" column to be present`);
     }
 
     // dynamic column names to avoid hard coding
-    this.namedColumns = Object.keys(this.args.data[0]);
+    this.namedColumns = Object.keys(this.args.data?.[0] || {});
   }
 
   /**

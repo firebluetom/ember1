@@ -6,7 +6,7 @@
     @onClick={{@onClickCheckbox}}
   />
 
-  <span class="count-selected" tabindex="0">{{this.selectedText}}</span>
+  <span class="count-selected" tabindex="0" data-test-selected-count>{{this.selectedText}}</span>
 
   <DownloadSelected 
     @onClick={{@onClickDownload}}

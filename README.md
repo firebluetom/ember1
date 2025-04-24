@@ -34,6 +34,8 @@ Components
 - checkbox - a checkbox supporting 3 states - checked / unchecked / indeterminate
 - download all button - button to download available selected rows
 
+## Tests
+
 ### Running Tests
 
 - `npm run test`
