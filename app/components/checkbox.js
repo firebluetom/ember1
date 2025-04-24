@@ -12,6 +12,7 @@ export default class CheckboxToggleComponent extends Component {
   get checkedState() {
     if (this.args.checked) return "true";
     if (this.args.partial) return "mixed"; // indeterminate
+    return false;
   }
 
   /**

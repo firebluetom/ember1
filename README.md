@@ -36,7 +36,9 @@ Components
 
 ## Tests
 
-### Running Tests
+Only wrote one test file
+
+### Running Tests and Linters
 
 - `npm run test`
 - `npm run test:ember -- --server`
