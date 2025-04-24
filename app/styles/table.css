@@ -1,7 +1,5 @@
 /* @import url("checkbox.css"); */
 
-
-
 /* table */
 table.file-list {
   width: 100%;
@@ -50,7 +48,6 @@ table.file-list tbody tr:focus {
 
 table.file-list td {
   padding: 10px;
-  
 }
 
 /* Checkbox cell */
