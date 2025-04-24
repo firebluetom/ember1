@@ -9,15 +9,14 @@
   --background-light: #ddd;
 }
 
+/* catch all for things that didn't seem to need a new CSS class */
+
 body {
-  color: #333;
+  /* dark gray color of text on page */
+  color: #333; 
 }
 
-.green-circle {
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  background-color: green;
-  border-radius: 50%;
-  margin-right: 2px;
+/* oh tailwind! */
+.relative {
+  position: relative;
 }

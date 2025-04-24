@@ -12,7 +12,7 @@
       <th class="checkbox-cell"></th>
       {{!-- use dynamic column names rather than hard coding --}}
       {{#each this.namedColumns as |column|}}
-        <th class="">{{column}}</th>
+        <th class="{{if (eq column 'status') 'status-cell'}}">{{column}}</th>
       {{/each}}
     </tr>
   </thead>

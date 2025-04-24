@@ -25,7 +25,14 @@ An unsuccessful attempt was made to add Tailwind, didn't want to spent much time
 
 ## Components
 
-The application has an index route that loads the data async and passes it to the 
+The application has an index route that loads the data async and passes it to the main component.
+
+Components
+- table with controls - the main component
+- table controls - the select all checkbox, number of items selected counter, and download button
+- table row - a row in the table
+- checkbox - a checkbox supporting 3 states - checked / unchecked / indeterminate
+- download all button - button to download available selected rows
 
 ### Running Tests
 

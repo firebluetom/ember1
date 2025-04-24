@@ -8,13 +8,4 @@ export default class IndexRoute extends Route {
 
     return { table };
   }
-
-  setupController(controller, model) {
-    super.setupController(controller, model);
-    controller.set('isLoading', false);
-  }
-
-  beforeModel() {
-    this.controllerFor('index').set('isLoading', true);
-  }
 }
