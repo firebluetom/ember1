@@ -40,6 +40,8 @@ Only wrote one test file
 
 ### Running Tests and Linters
 
+Tests can be run at http://localhost:4200/tests 
+
 - `npm run test`
 - `npm run test:ember -- --server`
 
