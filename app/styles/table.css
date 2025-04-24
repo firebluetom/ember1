@@ -1,0 +1,61 @@
+/* @import url("checkbox.css"); */
+
+
+
+/* table */
+table.file-list {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-family: sans-serif;
+  font-size: 14px;
+  border: 1px solid #bbb;
+  text-align: left;
+}
+
+/* Table header */
+table.file-list thead {
+  border-bottom: 1px solid #bbb;
+  font-size: 16px;
+}
+
+table.file-list th {
+  padding: 10px;
+  font-weight: normal;
+  text-transform: capitalize;
+}
+
+/* Table body  */
+table.file-list tbody tr {
+  transition: all 300ms ease;
+  border-top: 1px solid #bbb;
+}
+
+table.file-list tbody tr.cursor {
+  cursor: pointer;
+}
+
+table.file-list tbody tr.selected {
+  background-color: var(--background-medium);
+}
+
+table.file-list tbody tr.selected:hover {
+  background-color: var(--background-medium);
+}
+
+table.file-list tbody tr:hover,
+table.file-list tbody tr:focus {
+  background-color: var(--background-light);
+}
+
+table.file-list td {
+  padding: 10px;
+  
+}
+
+/* Checkbox cell */
+table.file-list .checkbox-cell {
+  width: 20px;
+  padding-right: 20px;
+  text-align: center;
+}

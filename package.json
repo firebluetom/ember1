@@ -32,10 +32,14 @@
     "@babel/plugin-proposal-decorators": "^7.25.9",
     "@ember/optional-features": "^2.2.0",
     "@ember/test-helpers": "^5.1.0",
+    "@embroider/compat": "^3.8.5",
+    "@embroider/core": "^3.5.5",
     "@embroider/macros": "^1.16.12",
+    "@embroider/webpack": "^4.1.0",
     "@eslint/js": "^9.23.0",
     "@glimmer/component": "^2.0.0",
     "@glimmer/tracking": "^1.1.2",
+    "autoprefixer": "^10.4.21",
     "broccoli-asset-rev": "^3.0.0",
     "concurrently": "^9.1.2",
     "ember-auto-import": "^2.10.0",
@@ -67,13 +71,17 @@
     "eslint-plugin-qunit": "^8.1.2",
     "globals": "^15.15.0",
     "loader.js": "^4.7.0",
+    "postcss": "^8.5.3",
+    "postcss-import": "^14.1.0",
+    "postcss-loader": "^7.1.1",
     "prettier": "^3.5.3",
     "prettier-plugin-ember-template-tag": "^2.0.4",
     "qunit": "^2.24.1",
     "qunit-dom": "^3.4.0",
     "stylelint": "^16.16.0",
     "stylelint-config-standard": "^36.0.1",
-    "tracked-built-ins": "^3.4.0",
+    "tailwindcss": "^3.4.17",
+    "tracked-maps-and-sets": "^3.0.2",
     "webpack": "^5.98.0"
   },
   "engines": {
@@ -81,5 +89,9 @@
   },
   "ember": {
     "edition": "octane"
+  },
+  "dependencies": {
+    "ember-truth-helpers": "^4.0.3",
+    "rsvp": "^4.8.5"
   }
 }

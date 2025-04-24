@@ -1,0 +1,14 @@
+<span
+  role="checkbox"
+  aria-checked={{this.checkedState}}
+  tabindex="{{if @skipTab '-1' '0'}}"
+  {{on "click" this.onClick}}
+  {{on "keydown" this.handleKeyDown}}
+  class="custom-checkbox"
+>
+  {{#if @partial}}
+    &mdash;
+  {{else if @checked}}
+    &checkmark;
+  {{/if}}
+</span>

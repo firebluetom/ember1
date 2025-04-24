@@ -1,0 +1,14 @@
+<div class="table-controls">
+
+  <Checkbox
+    @partial={{this.showPartial}}
+    @checked={{this.showFull}}
+    @onClick={{@onClickCheckbox}}
+  />
+
+  <span class="count-selected" tabindex="0">{{this.selectedText}}</span>
+
+  <DownloadSelected 
+    @onClick={{@onClickDownload}}
+  />
+</div>

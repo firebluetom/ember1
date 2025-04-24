@@ -1,0 +1,13 @@
+{{page-title "Index"}}
+
+{{#if this.hasTableData}}
+  <Table @data={{@model.table}} />
+{{else}}
+  <span class="loader"></span>
+{{/if}}
+
+{{!-- {{#if this.isLoading}}
+  <span class="loader"></span>
+{{else}}
+  <Table @data={{@model.table}} />
+{{/if}} --}}

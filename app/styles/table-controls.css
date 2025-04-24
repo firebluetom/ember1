@@ -1,0 +1,26 @@
+.table-controls {
+  display: flex;
+  align-items: center;
+  padding: 15px 10px;
+  border: 1px solid #bbb;
+  border-bottom: none;
+  font-family: sans-serif;
+  font-size: 20px;
+  gap: 30px;
+}
+
+.count-selected {
+  width: 140px;
+}
+
+.download-selected {
+  display: flex;
+  gap: 5px;
+  align-items: end;
+  cursor: pointer;
+}
+
+.download-selected svg {
+  height: 100%;
+  width: 25px;
+}

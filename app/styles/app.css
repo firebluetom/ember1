@@ -1,1 +1,23 @@
-/* Ember supports plain CSS out of the box. More info: https://cli.emberjs.com/release/advanced-use/stylesheets/ */
+@import url("table-controls.css");
+@import url("table.css");
+@import url("checkbox.css");
+@import url("loader.css");
+
+:root {
+  --table-border: #bbb;
+  --background-medium: #ccc;
+  --background-light: #ddd;
+}
+
+body {
+  color: #333;
+}
+
+.green-circle {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: green;
+  border-radius: 50%;
+  margin-right: 2px;
+}

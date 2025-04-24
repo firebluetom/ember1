@@ -1,0 +1,21 @@
+<tr
+  class="cursor {{if @isSelected 'selected'}} "
+  tabindex="0"
+  {{on "click" @onClick}}
+  {{on "keydown" this.handleKeyDown}}
+>
+  <td class="checkbox-cell">
+    <Checkbox @checked={{@isSelected}} @skipTab={{true}} />
+  </td>
+  <td class="">{{@row.name}}</td>
+  <td class="">{{@row.device}}</td>
+  <td class="">{{@row.path}}</td>
+  <td class="">
+    {{#if (eqi @row.status "available")}}
+      <span class="green-circle"></span>
+      Available
+    {{else}}
+      Scheduled
+    {{/if}}
+  </td>
+</tr>
