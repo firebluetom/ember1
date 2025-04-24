@@ -23,6 +23,10 @@ You will need the following things properly installed on your computer.
 
 An unsuccessful attempt was made to add Tailwind, didn't want to spent much time on it so stuck to basic CSS.
 
+## Components
+
+The application has an index route that loads the data async and passes it to the 
+
 ### Running Tests
 
 - `npm run test`
